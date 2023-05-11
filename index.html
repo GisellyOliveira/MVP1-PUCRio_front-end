@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/x-icon" href="./img/cart.ico">
+    <title>MVP1 - PUCRio</title>
+</head>
+
+<body>
+     
+    <header>
+        <div class="title">
+            <h2><img src="./img/cart.png" width="33px" height="33px"> Smart Cart</h2>
+        </div>
+    </header>
+
+    <div id="content">
+    
+        <section class="newItem">
+            <input type="text" id="newInput" placeholder="Adicionar produto">
+            <input type="text" id="newQuantity" placeholder="Quantidade">
+            <input type="text" id="newPrice" placeholder="R$">
+            <span onclick="newItem()" class="addBtn">Adicionar</span>
+        </section>
+
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+                <th><img src="./img/trashbin.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+<div id="footer">
+    <footer> 
+        <p> MVP #1 - PUC-Rio Pós-Graduação em Engenharia de Software</p>
+        <a href="https://github.com/GisellyOliveira"> <img src="./img/github-logo.png" width="15px" height="15px"> Giselly Oliveira</a>
+    </footer>
+</div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+html,
+body {
+    font-family: "Source Sans Pro", 'Times New Roman';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}  
+
+header, footer {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+header {
+    background-color: rgb(26, 27, 27);
+}
+
+.title {
+    width: 100%;
+    display: inline-block;
+    padding: 2px 2px;
+    position: sticky;
+    top: 0px;
+}
+
+.title {
+    color: white;
+    padding: 0;
+    margin: auto;
+    font-size: 30px ;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.3rem;   
+    font-size: 12px;
+    color: black;
+    background-color: rgba(26, 27, 27, 0.8);         
+  }
+
+footer>a {
+    text-decoration: none;
+    color: black;
+}
+
+footer>a:hover{
+    color: white;
+}
+
+
+#content {
+    background-image: url(https://images.unsplash.com/photo-1569322374042-55907cf28706?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    height: 570px;
+    width: 100%;
+}
+
+.newItem {
+    padding: 30px 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#newInput, #newQuantity, #newPrice, .addBtn {
+    margin: 0;
+    border: 1px solid rgb(35, 32, 24);
+    background-color: rgb(3, 6, 9);
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+#newInput {
+    width: 25%;
+}
+
+#newQuantity {
+    width: 8%;
+}
+
+#newPrice {
+    width: 5%;
+}
+
+.addBtn {
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.addBtn:hover {
+    background-color: #2ab53a;
+}    
+
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex: auto;
+}
+
+.close:hover {
+    font-weight: bolder;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 10px;
+    font-size: 18px;
+    transition: 0.2s;
+    text-align: start;
+}
+
+table{
+    background-color: rgba(5, 5, 5, 0.3);
+    color: white;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex: 0 1;
+}
+
+
+tr:nth-child(odd){
+    background-color: rgba(5, 5, 5, 0.5);
+}
+
+th:nth-child(1){
+    width: 70%;
+}
+
+tr:hover {
+    background: rgba(3, 3, 3, 0.7);
+}
+
